@@ -8,7 +8,22 @@
     <style>
     .dad{
         display: grid;
-        grid-template: 2000px / 1fr 2.5fr 1fr 
+        grid-template: 100px 300px 300px / 1fr 2.5fr 1fr;
+        grid-template-areas: "hero hero hero"
+                            ". arana ."
+                             ". pez .";
+    }
+    .son1 {
+        grid-area: hero;
+        background: red;
+    }
+    .son2 {
+        grid-area: arana;
+        background: blue;
+    }
+    .son3{
+        grid-area: pez;
+        background: yellow;
     }
     </style>
 </head>

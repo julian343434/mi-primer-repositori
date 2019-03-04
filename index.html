@@ -12,6 +12,7 @@
         grid-template-areas: "hero hero hero"
                             ". arana ."
                              ". pez .";
+                             grid-gap: 5px;
     }
     .son1 {
         grid-area: hero;
@@ -24,14 +25,41 @@
     .son3{
         grid-area: pez;
         background: yellow;
+        display: grid;
+    }
+    .pez{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:"img" 
+                            "texto"
+                            "video";
+    }
+    .img{
+        grid-area: img
+    }
+    .texto{
+        grid-area: texto
+    }
+    .video{
+        grid-area: video;
     }
     </style>
 </head>
 <body>
     <div class="dad">
-        <div class="son1"></div>
-        <div class="son2"></div>
-        <div class="son3"></div>
+        <div class="son1">
+            <section class="hero"></section>
+        </div>
+        <div class="son2">
+            <section class="arana"></section>
+        </div>
+        <div class="son3">
+            <section class="pez">
+                <div class="img"></div>                
+                <div class="texto"></div>
+                <div class="video"></div>
+            </section>
+        </div>
     </div>
 </body>
 <footer>

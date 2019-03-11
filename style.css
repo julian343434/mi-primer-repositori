@@ -1,0 +1,4 @@
+body{
+	display:grid;
+	grid-template-colum: 5fr 1fr;
+}

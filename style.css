@@ -1,5 +1,6 @@
 body{
 	display:grid;
 	grid-template-columns: 5fr 1fr;
+	grid-template-rows: 0.1fr 1000px;	
 }
 
